@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" data-framework="emberjs">
+<head>
+    <meta charset="utf-8">
+    <title>ember_js_di_example</title>
+    <script src="./bower_components/jquery/dist/jquery.js"></script>
+    <script src="./bower_components/handlebars/handlebars.js"></script>
+    <script src="./bower_components/ember/ember.js"></script>
+
+    <script src="./index.js"></script>
+</head>
+<body>
+
+
+<script type="text/x-handlebars" id="Home">
+    <div>
+        <div>My name is <b>{{me.name}}</b></div>
+        <div>My wife name is  <b>{{me.wife.name}}</b></div>
+        <div>My wife name is  <b>{{wife.name}}</b> (based on controller injection)</div>
+        <div>My children name is  <b>{{me.children.name}}</b></div>
+    </div>
+</script>
+
+<script type="text/x-handlebars">
+    {{ outlet }}
+</script>
+
+</body>
+
+</html>
