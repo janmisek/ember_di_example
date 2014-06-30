@@ -3,4 +3,4 @@
 ## Quick start
 
 1. Install components "bower install"
-2. execute index.html
+2. execute index.html/#/home
